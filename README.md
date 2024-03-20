@@ -72,7 +72,7 @@ POST http://localhost:5284/api/Contracts
 
 2. For `GET` Method use -
 ```
-GET http://localhost:5284/api/Contracts/<your_id>
+GET http://localhost:5284/api/Contracts/<contract_id>
 ```
 
 ### Sample Requests -
