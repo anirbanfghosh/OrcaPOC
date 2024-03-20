@@ -49,6 +49,7 @@ Task is to develop an API endpoint for a Contract Management system using Domain
 ```
 
 ## Solution Approach
+
 Domain Driven Design (DDD) has been used to implement the given challenge. 
 As part of the solution, **3 projects** have been defined -
 - POC.API - This contains the *Application Layer*
@@ -57,10 +58,12 @@ As part of the solution, **3 projects** have been defined -
 
 1. *POC.API* contains the API Controller which is responsible for handling inputs. `GET` and `POST` methods have been implemented to store and retrieve Contracts.
 2. *POC.Domain* contains the Entity models for `Contract`, `Product` and `Element`. It also contains a `Root` model to wrap the `Contract` object.
-3. *POC.Infrastructure* contains the logic for interacting with the Repository, which in this case is **Azure Cache for Redis**.
+3. *POC.Infrastructure* contains the logic for interacting with the Repository, which in this case is **Azure Cache for Redis**.  
+
+**The solution is implemented using .NET 8**
 
 ### How To Run
-Pull the code present in `Master` and use **Visual Studio 2022** to run. Set Startup Project as ***POC.API***
+Pull the code present in `master` and use **Visual Studio 2022** to run. Set Startup Project as ***POC.API***
 
 1. For `POST` Method, use - 
 ```
@@ -107,11 +110,14 @@ GET http://localhost:5284/api/Contracts/69000ae0-ea25-4b77-a531-10c4ef8030ae
 ```
 
 #### Responses -
-Success - `200 OK` with associated `Contract`.
+Success - `200 OK` with associated `Contract`.   
 
-In case Contract does not exist - `404 Not Found`
+In case Contract does not exist - `404 Not Found`   
+
+
 
 **Test for as many unique GUIDs as required.**
+
 
 ### References - 
 https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
