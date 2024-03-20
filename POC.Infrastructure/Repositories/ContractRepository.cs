@@ -1,4 +1,5 @@
 ﻿using System.Text.Json;
+using Microsoft.Extensions.Configuration;
 using POC.Domain.Entities.Contracts;
 using POC.Domain.Interfaces;
 using StackExchange.Redis;
@@ -9,11 +10,13 @@ namespace POC.Infrastructure.Repositories
     {
         private readonly ConnectionMultiplexer _connectionMultiplexer;
 
-        private readonly string connectionString = "testpoccontract.redis.cache.windows.net:6380,password=jjgMCa1lCUsxWKehmAOS0jpBpPtIds5W6AzCaNPAMlw=,ssl=True,abortConnect=False";
+        private readonly IConfiguration _configuration;
 
-        public ContractRepository()
+        public ContractRepository(IConfiguration configuration)
         {
-            _connectionMultiplexer = ConnectionMultiplexer.Connect(connectionString);
+            
+            _configuration = configuration;
+            _connectionMultiplexer = ConnectionMultiplexer.Connect(_configuration.GetSection("Redis").GetSection("ConnectionString").Value);
         }
 
         public async Task<Root> GetContract(Guid id)

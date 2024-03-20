@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.API", "POC.API\POC.API.csproj", "{5A4DDB4C-EFDA-45C3-9B74-DF36975EB83F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.API", "POC.API\POC.API.csproj", "{5A4DDB4C-EFDA-45C3-9B74-DF36975EB83F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.Domain", "POC.Domain\POC.Domain.csproj", "{8A62599D-5546-4B98-AA13-70BC8C3243AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Domain", "POC.Domain\POC.Domain.csproj", "{8A62599D-5546-4B98-AA13-70BC8C3243AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC.Infrastructure", "POC.Infrastructure\POC.Infrastructure.csproj", "{2A308822-5BC7-473B-BF37-B55A4D66DCCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Infrastructure", "POC.Infrastructure\POC.Infrastructure.csproj", "{2A308822-5BC7-473B-BF37-B55A4D66DCCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
