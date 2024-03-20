@@ -51,7 +51,7 @@ Task is to develop an API endpoint for a Contract Management system using Domain
 ## Solution Approach
 
 Domain Driven Design (DDD) has been used to implement the given challenge. 
-As part of the solution, **3 projects** have been defined -
+As part of the `OrcaPOC` solution, **3 projects** have been defined -
 - POC.API - This contains the *Application Layer*
 - POC.Domain - This contains the *Domain Model Layer*
 - POC.Infrastructure - This contains the *Infrastructure Layer*
@@ -72,7 +72,7 @@ POST http://localhost:5284/api/Contracts
 
 2. For `GET` Method use -
 ```
-GET http://localhost:5284/api/Contracts/<your_guid>
+GET http://localhost:5284/api/Contracts/<your_id>
 ```
 
 ### Sample Requests -
@@ -116,7 +116,7 @@ In case Contract does not exist - `404 Not Found`
 
 
 
-**Test for as many unique GUIDs as required.**
+**Test for as many unique Contract IDs as required.**
 
 
 ### References - 
